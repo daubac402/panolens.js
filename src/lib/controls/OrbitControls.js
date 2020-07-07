@@ -575,6 +575,10 @@ function OrbitControls ( object, domElement ) {
 
         }
 
+        if ( scope.reverseZoom ) {
+            delta *= -1;
+        }
+
         if ( delta > 0 ) {
 
             // scope.dollyOut();
